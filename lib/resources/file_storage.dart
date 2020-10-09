@@ -1,7 +1,7 @@
 import 'dart:convert';
 import 'dart:io';
 
-import 'package:flutter_bloc_boiler_plate/repositories/repository.dart';
+import 'package:the_church/repositories/repository.dart';
 
 class FileStorage implements HymnsRepository {
   final String hymn;

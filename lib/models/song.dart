@@ -1,5 +1,5 @@
 import 'package:equatable/equatable.dart';
-import 'package:flutter_bloc_boiler_plate/repositories/song_entity.dart';
+import 'package:the_church/repositories/song_entity.dart';
 
 class Song extends Equatable {
   final id;

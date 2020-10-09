@@ -1,4 +1,4 @@
-import 'package:flutter_bloc_boiler_plate/repositories/repository.dart';
+import 'package:the_church/repositories/repository.dart';
 import 'package:dio/dio.dart';
 
 class HymnsApiProvider implements HymnsRepository {

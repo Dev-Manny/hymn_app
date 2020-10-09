@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_bloc_boiler_plate/blocs/songs/songs_bloc.dart';
-import 'package:flutter_bloc_boiler_plate/blocs/songs/songs_event.dart';
-import 'package:flutter_bloc_boiler_plate/blocs/songs/songs_state.dart';
-import 'package:flutter_bloc_boiler_plate/screens/song_details.dart';
+import 'package:the_church/blocs/songs/songs_bloc.dart';
+import 'package:the_church/blocs/songs/songs_event.dart';
+import 'package:the_church/blocs/songs/songs_state.dart';
+import 'package:the_church/screens/song_details.dart';
 
 // ignore: must_be_immutable
 class SongScreen extends StatelessWidget {

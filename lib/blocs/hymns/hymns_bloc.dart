@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_bloc_boiler_plate/blocs/hymns/hymns.dart';
-import 'package:flutter_bloc_boiler_plate/models/models.dart';
-import 'package:flutter_bloc_boiler_plate/repositories/hymns_repository.dart';
+import 'package:the_church/blocs/hymns/hymns.dart';
+import 'package:the_church/models/models.dart';
+import 'package:the_church/repositories/hymns_repository.dart';
 
 class HymnsBloc extends Bloc<HymnsEvent, HymnsState> {
   final HymnsRepository hymnsRepository;

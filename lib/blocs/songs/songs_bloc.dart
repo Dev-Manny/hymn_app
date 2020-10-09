@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_bloc_boiler_plate/blocs/songs/songs.dart';
-import 'package:flutter_bloc_boiler_plate/models/song.dart';
-import 'package:flutter_bloc_boiler_plate/repositories/songs_repository.dart';
+import 'package:the_church/blocs/songs/songs.dart';
+import 'package:the_church/models/song.dart';
+import 'package:the_church/repositories/songs_repository.dart';
 
 
 class SongsBloc extends Bloc<SongsEvent, SongsState> {

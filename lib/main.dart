@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_bloc_boiler_plate/blocs/bloc.dart';
-import 'package:flutter_bloc_boiler_plate/blocs/songs/songs_bloc.dart';
-import 'package:flutter_bloc_boiler_plate/blocs/tab/tab_bloc.dart';
-import 'package:flutter_bloc_boiler_plate/repositories/hymns_repository.dart';
-import 'package:flutter_bloc_boiler_plate/resources/hymns_api_provider.dart';
-import 'package:flutter_bloc_boiler_plate/resources/songs_api_provider.dart';
-import 'package:flutter_bloc_boiler_plate/screens/home.dart';
-import 'package:flutter_bloc_boiler_plate/utils/utils.dart';
+import 'package:the_church/blocs/bloc.dart';
+import 'package:the_church/blocs/songs/songs_bloc.dart';
+import 'package:the_church/blocs/tab/tab_bloc.dart';
+import 'package:the_church/repositories/hymns_repository.dart';
+import 'package:the_church/resources/hymns_api_provider.dart';
+import 'package:the_church/resources/songs_api_provider.dart';
+import 'package:the_church/screens/home.dart';
+import 'package:the_church/utils/utils.dart';
 
 void main() {
   Bloc.observer = SimpleBlocObserver();

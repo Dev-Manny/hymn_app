@@ -1,7 +1,7 @@
 import 'dart:async';
 import 'package:bloc/bloc.dart';
-import 'package:flutter_bloc_boiler_plate/blocs/tab/tab.dart';
-import 'package:flutter_bloc_boiler_plate/models/models.dart';
+import 'package:the_church/blocs/tab/tab.dart';
+import 'package:the_church/models/models.dart';
 
 class TabBloc extends Bloc<TabEvent, AppTab> {
   TabBloc() : super(AppTab.home);

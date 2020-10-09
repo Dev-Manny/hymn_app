@@ -1,5 +1,5 @@
 import 'package:equatable/equatable.dart';
-import 'package:flutter_bloc_boiler_plate/models/song.dart';
+import 'package:the_church/models/song.dart';
 
 abstract class SongsState extends Equatable {
   const SongsState();

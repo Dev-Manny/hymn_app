@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_bloc_boiler_plate/blocs/bloc.dart';
-import 'package:flutter_bloc_boiler_plate/blocs/songs/songs_bloc.dart';
-import 'package:flutter_bloc_boiler_plate/screens/song.dart';
-import 'package:flutter_bloc_boiler_plate/utils/utils.dart';
+import 'package:the_church/blocs/bloc.dart';
+import 'package:the_church/blocs/songs/songs_bloc.dart';
+import 'package:the_church/screens/song.dart';
+import 'package:the_church/utils/utils.dart';
 
 class HymnList extends StatelessWidget {
   @override

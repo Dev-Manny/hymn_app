@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc_boiler_plate/repositories/repository.dart';
+import 'package:the_church/repositories/repository.dart';
 
 class LocalStorageRepository implements HymnsRepository {
   final HymnsRepository localStorage;

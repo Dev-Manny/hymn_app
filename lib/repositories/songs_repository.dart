@@ -1,4 +1,4 @@
-import 'package:flutter_bloc_boiler_plate/repositories/song_entity.dart';
+import 'package:the_church/repositories/song_entity.dart';
 
 abstract class SongsRepository {
   Future<List<SongEntity>> loadSongs(int id);

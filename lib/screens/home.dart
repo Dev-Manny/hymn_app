@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_bloc_boiler_plate/blocs/tab/tab_bloc.dart';
-import 'package:flutter_bloc_boiler_plate/blocs/tab/tab_event.dart';
-import 'package:flutter_bloc_boiler_plate/models/models.dart';
-import 'package:flutter_bloc_boiler_plate/screens/hymn_item.dart';
-import 'package:flutter_bloc_boiler_plate/widgets/tab_selector.dart';
+import 'package:the_church/blocs/tab/tab_bloc.dart';
+import 'package:the_church/blocs/tab/tab_event.dart';
+import 'package:the_church/models/models.dart';
+import 'package:the_church/screens/hymn_item.dart';
+import 'package:the_church/widgets/tab_selector.dart';
 
 class Home extends StatelessWidget {
   @override

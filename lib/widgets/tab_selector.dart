@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc_boiler_plate/models/models.dart';
+import 'package:the_church/models/models.dart';
 
 class TabSelector extends StatelessWidget {
   final AppTab activeTab;
@@ -17,18 +17,18 @@ class TabSelector extends StatelessWidget {
   Widget build(BuildContext context) {
     return BottomNavigationBar(
       //key: ArchSampleKeys.tabs,
-      
+
       elevation: 8.0,
       currentIndex: AppTab.values.indexOf(activeTab),
       onTap: (index) => onTabSelected(AppTab.values[index]),
       items: AppTab.values.map((tab) {
         return BottomNavigationBarItem(
-          
           icon: Icon(
-            
             (tab == AppTab.home)
                 ? Icons.home
-                : (tab == AppTab.favourite) ? Icons.favorite_border : Icons.menu,
+                : (tab == AppTab.favourite)
+                    ? Icons.favorite_border
+                    : Icons.menu,
             // key: tab == AppTab.home
             //     ? ArchSampleKeys.todoTab
             //     : ArchSampleKeys.statsTab,

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc_boiler_plate/repositories/repository.dart';
-import 'package:flutter_bloc_boiler_plate/repositories/reactive_repository.dart';
+import 'package:the_church/repositories/repository.dart';
+import 'package:the_church/repositories/reactive_repository.dart';
 import 'package:rxdart/subjects.dart';
 
 class ReactiveLocalStorageRepository implements ReactiveHymnsRepository {
