@@ -22,6 +22,7 @@ class SongsApiProvider implements SongsRepository {
     } catch (error, stacktrace) {
       print(error);
       print(stacktrace);
+      return null;
     }
   }
 }

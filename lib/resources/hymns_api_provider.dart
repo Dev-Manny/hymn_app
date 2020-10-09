@@ -22,6 +22,7 @@ class HymnsApiProvider implements HymnsRepository {
     } catch (error, stacktrace) {
       print(error);
       print(stacktrace);
+      return null;
     }
   }
 
