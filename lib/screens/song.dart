@@ -28,7 +28,21 @@ class SongScreen extends StatelessWidget {
         print(songs);
         return Scaffold(
             appBar: AppBar(
-              title: Text('English Hymn'),
+              elevation: 0,
+              iconTheme: IconThemeData(
+                color: Colors.deepOrangeAccent,  
+              ),
+              title: Text(
+                'Worship & Praise',
+                style: TextStyle(fontSize: 20.0, color: Colors.deepOrangeAccent),
+              ),
+              backgroundColor: Colors.white,
+              actions: [
+                Padding(
+                  padding: const EdgeInsets.all(15.0),
+                  child: Icon(Icons.search, size: 30.0,),
+                ),
+              ],
             ),
             body: Container(
               child: ListView.builder(
@@ -75,18 +89,38 @@ class SongScreen extends StatelessWidget {
                                       child: Padding(
                                         padding: EdgeInsets.all(10.0),
                                         child: Row(
+                                          mainAxisAlignment:
+                                              MainAxisAlignment.spaceBetween,
                                           children: [
-                                            Padding(
-                                              padding:
-                                                  const EdgeInsets.all(10.0),
-                                              child: Text(
-                                                  '${songs[i].songNumber}.'),
+                                            Row(
+                                              children: [
+                                                Padding(
+                                                  padding: const EdgeInsets.all(
+                                                      10.0),
+                                                  child: Text(
+                                                      '${songs[i].songNumber}.'),
+                                                ),
+                                                Padding(
+                                                  padding: const EdgeInsets.all(
+                                                      10.0),
+                                                  child:
+                                                      Text('${songs[i].title}'),
+                                                ),
+                                              ],
                                             ),
                                             Padding(
                                               padding:
-                                                  const EdgeInsets.all(10.0),
-                                              child: Text('${songs[i].title}'),
-                                            ),
+                                                  const EdgeInsets.all(8.0),
+                                              child: InkWell(
+                                                onTap: () {},
+                                                child: Container(
+                                                    child: Icon(
+                                                  Icons.favorite_border,
+                                                  color: Colors.deepOrangeAccent,
+                                                  size: 20.0,
+                                                )),
+                                              ),
+                                            )
                                           ],
                                         ),
                                       ),

@@ -5,7 +5,7 @@ import 'package:flutter_bloc_boiler_plate/repositories/song_entity.dart';
 class SongsApiProvider implements SongsRepository {
   final Duration delay;
   final Dio _dio = Dio();
-  final String _endpoint = "http://10.0.2.2:4000/api";
+  final String _endpoint = "https://spiritual-hymnals.herokuapp.com/api";
 
   SongsApiProvider([this.delay = const Duration(milliseconds: 3000)]);
 

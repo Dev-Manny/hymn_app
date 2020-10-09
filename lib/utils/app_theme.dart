@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class AppTheme {
   static bool isLightTheme = true;
-  static Color primaryColors = HexColor("#223FA1");
+  static Color primaryColors = Colors.deepOrangeAccent;
   static Color secondaryColors = Colors.purpleAccent[100];
   static Color kIconColors = Color(0xFFF48A37);
 

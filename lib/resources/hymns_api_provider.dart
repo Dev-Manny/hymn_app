@@ -4,7 +4,7 @@ import 'package:dio/dio.dart';
 class HymnsApiProvider implements HymnsRepository {
   final Duration delay;
   final Dio _dio = Dio();
-  final String _endpoint = "http://10.0.2.2:4000/api";
+  final String _endpoint = "https://spiritual-hymnals.herokuapp.com/api";
 
   HymnsApiProvider([this.delay = const Duration(milliseconds: 3000)]);
 

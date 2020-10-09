@@ -18,11 +18,25 @@ class SongDetails extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: Row(
-            children: [
-              Text('$songNumber. $title'),
-            ],
+          elevation: 0,
+          iconTheme: IconThemeData(
+            color: Colors.deepOrangeAccent,
           ),
+          title: Center(
+            child: Text('$songNumber.  $title',
+                style:
+                    TextStyle(fontSize: 20.0, color: Colors.deepOrangeAccent)),
+          ),
+          backgroundColor: Colors.white,
+          actions: [
+            Padding(
+              padding: const EdgeInsets.all(15.0),
+              child: Icon(
+                Icons.share,
+                size: 30.0,
+              ),
+            ),
+          ],
         ),
         body: Container(
             child: Column(
@@ -32,17 +46,26 @@ class SongDetails extends StatelessWidget {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Padding(
-                    padding: const EdgeInsets.fromLTRB(0, 0, 20, 0),
-                    child: Text('$songNumber'),
-                  ),
-                  Text('$title'),
+                  // Padding(
+                  //   padding: const EdgeInsets.fromLTRB(0, 0, 20, 0),
+                  //   child: Text('$songNumber',
+                  //       style: TextStyle(
+                  //           fontSize: 18.0,
+                  //           fontWeight: FontWeight.bold,
+                  //           color: Colors.black)),
+                  // ),
+                  Text('$title',
+                      style: TextStyle(
+                          fontSize: 25.0,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.black)),
                 ],
               ),
             ),
             ListView.builder(
               scrollDirection: Axis.vertical,
               shrinkWrap: true,
+              physics: NeverScrollableScrollPhysics(),
               itemBuilder: (context, i) {
                 return Container(
                   child: Padding(
